@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" fill="none">
+  <defs>
+    <!-- Background & Card Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0F1D"/>
+      <stop offset="45%" stop-color="#14162B"/>
+      <stop offset="100%" stop-color="#1C1A38"/>
+    </linearGradient>
+
+    <linearGradient id="cardBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <linearGradient id="mainCardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4B5FD" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F5F3FF"/>
+      <stop offset="100%" stop-color="#DDD6FE"/>
+    </linearGradient>
+
+    <linearGradient id="sparkleGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DDD6FE"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+
+    <linearGradient id="sparkleGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBCFE8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <linearGradient id="photoSky1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E2452"/>
+      <stop offset="60%" stop-color="#3F326D"/>
+      <stop offset="100%" stop-color="#4F3D82"/>
+    </linearGradient>
+
+    <linearGradient id="photoSky2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E284F"/>
+      <stop offset="60%" stop-color="#2A3870"/>
+      <stop offset="100%" stop-color="#354988"/>
+    </linearGradient>
+
+    <linearGradient id="photoSkyMain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1C38"/>
+      <stop offset="55%" stop-color="#2D2B5E"/>
+      <stop offset="100%" stop-color="#43397A"/>
+    </linearGradient>
+
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="pickBadgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Radial Lighting -->
+    <radialGradient id="ambientViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.24"/>
+      <stop offset="60%" stop-color="#6366F1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="ambientBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.18"/>
+      <stop offset="70%" stop-color="#1D4ED8" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Reusable Sparkle Path -->
+    <path id="sparkleShape" d="M 0 -20 C 0 -5.5, 5.5 0, 20 0 C 5.5 0, 0 5.5, 0 20 C 0 5.5, -5.5 0, -20 0 C -5.5 0, 0 -5.5, 0 -20 Z"/>
+  </defs>
+
+  <style>
+    .font-base {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    }
+  </style>
+
+  <!-- Background Base with Rounded Corners -->
+  <rect width="1200" height="360" rx="24" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Ambient Glows -->
+  <circle cx="890" cy="180" r="240" fill="url(#ambientViolet)"/>
+  <circle cx="280" cy="120" r="200" fill="url(#ambientBlue)"/>
+  <circle cx="1060" cy="90" r="140" fill="url(#ambientViolet)"/>
+
+  <!-- Subtle Outer Border -->
+  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5"/>
+
+  <!-- ================= LEFT BRAND CONTENT ================= -->
+
+  <!-- Top Feature Badges -->
+  <g class="font-base" transform="translate(80, 56)">
+    <!-- Badge 1: ON-DEVICE AI -->
+    <g transform="translate(0, 0)">
+      <rect width="138" height="28" rx="14" fill="#252247" fill-opacity="0.9" stroke="#4C447F" stroke-width="1"/>
+      <circle cx="16" cy="14" r="3.5" fill="#A78BFA"/>
+      <text x="27" y="18" fill="#EDE9FE" font-size="11" font-weight="700" letter-spacing="1">ON-DEVICE AI</text>
+    </g>
+
+    <!-- Badge 2: YOUR TASTE -->
+    <g transform="translate(148, 0)">
+      <rect width="124" height="28" rx="14" fill="#1F244C" fill-opacity="0.9" stroke="#3E4785" stroke-width="1"/>
+      <circle cx="16" cy="14" r="3.5" fill="#818CF8"/>
+      <text x="27" y="18" fill="#E0E7FF" font-size="11" font-weight="700" letter-spacing="1">YOUR TASTE</text>
+    </g>
+
+    <!-- Badge 3: WINDOWS 1.0.5 -->
+    <g transform="translate(282, 0)">
+      <rect width="144" height="28" rx="14" fill="#192342" fill-opacity="0.9" stroke="#334674" stroke-width="1"/>
+      <circle cx="16" cy="14" r="3.5" fill="#60A5FA"/>
+      <text x="27" y="18" fill="#DBEAFE" font-size="11" font-weight="700" letter-spacing="1">WINDOWS 1.0.5</text>
+    </g>
+  </g>
+
+  <!-- Main Title: PhotoPick -->
+  <g class="font-base" transform="translate(80, 168)">
+    <text x="0" y="0" fill="url(#titleGrad)" font-size="62" font-weight="800" letter-spacing="-1">PhotoPick</text>
+    <!-- Brand Pick Accent Symbol -->
+    <circle cx="340" cy="-38" r="5" fill="#A78BFA"/>
+    <path d="M 334 -15 Q 346 -15 352 -8" stroke="#818CF8" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Korean Subtitle -->
+  <g class="font-base" transform="translate(82, 222)">
+    <text x="0" y="0" fill="#DDD9F3" font-size="22" font-weight="600" letter-spacing="-0.3">사진 정리, 내 기기에서 가볍게.</text>
+  </g>
+
+  <!-- Value Proposition / Accent Bar -->
+  <g class="font-base" transform="translate(82, 264)">
+    <line x1="0" y1="0" x2="360" y2="0" stroke="url(#lineGrad)" stroke-width="1.5"/>
+    <text x="0" y="24" fill="#9CA3AF" font-size="13.5" font-weight="500" letter-spacing="-0.2">
+      외부 전송 없는 로컬 사진 선별 · 감각적인 큐레이션
+    </text>
+  </g>
+
+
+  <!-- ================= RIGHT VECTOR ARTWORK ================= -->
+
+  <!-- Card 1: Back-Left (Angle: -10deg) -->
+  <g transform="translate(755, 185) rotate(-10)">
+    <!-- Shadow & Base -->
+    <rect x="-100" y="-130" width="200" height="260" rx="16" fill="#1A1833" stroke="#363259" stroke-width="1.5"/>
+    <!-- Photo Inner Area -->
+    <rect x="-88" y="-118" width="176" height="180" rx="10" fill="url(#photoSky1)"/>
+    <!-- Mountain Silhouette -->
+    <polygon points="-88,62 -30,0 20,45 60,10 88,62" fill="#1F1B3B" opacity="0.9"/>
+    <!-- Soft Moon -->
+    <circle cx="45" cy="-70" r="14" fill="#EDE9FE" opacity="0.75"/>
+    <!-- Bottom Card Bars -->
+    <rect x="-88" y="76" width="90" height="7" rx="3.5" fill="#4B4673"/>
+    <rect x="-88" y="90" width="55" height="6" rx="3" fill="#363259"/>
+  </g>
+
+  <!-- Card 2: Back-Right (Angle: +9deg) -->
+  <g transform="translate(975, 180) rotate(9)">
+    <!-- Shadow & Base -->
+    <rect x="-100" y="-130" width="200" height="260" rx="16" fill="#161B36" stroke="#2F3863" stroke-width="1.5"/>
+    <!-- Photo Inner Area -->
+    <rect x="-88" y="-118" width="176" height="180" rx="10" fill="url(#photoSky2)"/>
+    <!-- Mountain / Waves Silhouette -->
+    <polygon points="-88,62 -40,15 15,50 88,25 88,62" fill="#17203E" opacity="0.9"/>
+    <!-- Gentle Sun -->
+    <circle cx="-35" cy="-60" r="16" fill="url(#sunGrad)" opacity="0.8"/>
+    <!-- Bottom Card Bars -->
+    <rect x="-88" y="76" width="80" height="7" rx="3.5" fill="#3D4978"/>
+    <rect x="-88" y="90" width="110" height="6" rx="3" fill="#293358"/>
+  </g>
+
+  <!-- Card 3: Front-Center Main Card (Angle: -1deg) -->
+  <g transform="translate(865, 172) rotate(-1)">
+    <!-- Outer Card Glow/Shadow -->
+    <rect x="-115" y="-145" width="230" height="290" rx="18" fill="#1F1D3D" stroke="url(#mainCardBorder)" stroke-width="2"/>
+    
+    <!-- Photo Inner Area -->
+    <rect x="-101" y="-131" width="202" height="206" rx="12" fill="url(#photoSkyMain)"/>
+    
+    <!-- Artwork Details: Mountains & Lake Reflections -->
+    <circle cx="50" cy="-65" r="18" fill="url(#sunGrad)"/>
+    <polygon points="-101,75 -45,-5 20,48 55,20 101,75" fill="#252148" opacity="0.95"/>
+    <polygon points="-101,75 -15,25 45,65 101,45 101,75" fill="#1C1838" opacity="0.9"/>
+
+    <!-- Bottom Card Content Area -->
+    <g transform="translate(-101, 88)">
+      <!-- Mini Avatar / Taste Match Indicator -->
+      <circle cx="10" cy="12" r="7" fill="#8B5CF6"/>
+      <!-- Skeleton Meta Bars -->
+      <rect x="25" y="6" width="110" height="6" rx="3" fill="#E2E8F0" fill-opacity="0.85"/>
+      <rect x="25" y="16" width="65" height="5" rx="2.5" fill="#94A3B8" fill-opacity="0.6"/>
+      <!-- Right Rating / Pick Checkmark -->
+      <circle cx="186" cy="12" r="9" fill="#10B981" fill-opacity="0.2"/>
+      <path d="M 182 12 L 185 15 L 190 9" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Featured 'PICK' Badge (Top-Right of Main Card) -->
+    <g transform="translate(68, -96)">
+      <circle cx="0" cy="0" r="19" fill="url(#pickBadgeGrad)" stroke="#C4B5FD" stroke-width="1.5"/>
+      <!-- Sparkle/Star Icon inside Badge -->
+      <path d="M 0 -9 C 0 -2.5, 2.5 0, 9 0 C 2.5 0, 0 2.5, 0 9 C 0 2.5, -2.5 0, -9 0 C -2.5 0, 0 -2.5, 0 -9 Z" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- ================= SPARKLING ACCENTS ================= -->
+
+  <!-- Top Sparkle -->
+  <g transform="translate(730, 68) scale(0.95)">
+    <use href="#sparkleShape" fill="url(#sparkleGrad1)"/>
+  </g>
+
+  <!-- Right Upper Sparkle -->
+  <g transform="translate(1045, 62) scale(1.15)">
+    <use href="#sparkleShape" fill="url(#sparkleGrad2)"/>
+  </g>
+
+  <!-- Right Lower Sparkle -->
+  <g transform="translate(1085, 265) scale(0.8)">
+    <use href="#sparkleShape" fill="url(#sparkleGrad1)"/>
+  </g>
+
+  <!-- Left Lower Sparkle -->
+  <g transform="translate(705, 275) scale(0.65)">
+    <use href="#sparkleShape" fill="url(#sparkleGrad2)"/>
+  </g>
+
+  <!-- Accent Sparkle near Title -->
+  <g transform="translate(520, 115) scale(0.6)">
+    <use href="#sparkleShape" fill="url(#sparkleGrad1)"/>
+  </g>
+
+  <!-- Subtle Twinkle Dots -->
+  <circle cx="715" cy="130" r="2" fill="#C4B5FD" opacity="0.8"/>
+  <circle cx="1010" cy="135" r="2.5" fill="#DDD6FE" opacity="0.85"/>
+  <circle cx="1065" cy="195" r="2" fill="#A78BFA" opacity="0.7"/>
+  <circle cx="750" cy="305" r="1.5" fill="#818CF8" opacity="0.75"/>
+  <circle cx="810" cy="45" r="2" fill="#FBCFE8" opacity="0.6"/>
+
+</svg>
