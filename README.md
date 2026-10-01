@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/songtan-ajae/PhotoPick/releases/latest"><img src="https://img.shields.io/github/v/release/songtan-ajae/PhotoPick?style=flat-square&color=6750A4" alt="Latest release"></a>
+  <img src="https://img.shields.io/badge/Release-Upload_pending-6750A4?style=flat-square" alt="Release upload pending">
   <img src="https://img.shields.io/badge/Windows-x64-1769E0?style=flat-square" alt="Windows x64">
   <img src="https://img.shields.io/badge/Photo_AI-On_device-287D63?style=flat-square" alt="On-device photo analysis">
   <img src="https://img.shields.io/badge/Distribution-Binary_only-555?style=flat-square" alt="Binary-only distribution">
@@ -20,6 +20,8 @@
   · <a href="docs/SCREENSHOTS.md">화면 둘러보기</a>
   · <a href="THIRD_PARTY_NOTICES.md">라이선스와 출처</a>
 </p>
+
+> 현재 실행 ZIP의 GitHub 업로드를 준비 중입니다. 소개 문서와 UI 캡처는 공개됐으며, 다운로드는 실행파일 릴리즈가 게시된 뒤 가능합니다.
 
 ## 어떤 앱인가요?
 
